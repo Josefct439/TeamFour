@@ -1,4 +1,7 @@
-.Carrito{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@120&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+.Carrito {
 
     color: black;
     font-family: 'Times New Roman', Times, serif;
@@ -6,26 +9,91 @@
 
 }
 
-header{
-    width: 100%;
+
+body{
+    background-color: #15081A;
+}
+header {
+
+    width: auto;
     height: auto;
     display: flex;
     justify-content: start;
-    background-color: aqua;
-    
+    color: white;
     margin: 0;
     padding: 0;
-}
-nav{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
-}
-.item{
-    display: flex;
-    justify-content: center;
-    padding: 0.5rem;
-    
     
 }
 
+header ul{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+nav {
+  
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-left: 10px;
+    height: 150px;
+    font-family: 'Poppins', sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+
+
+}
+
+.logo{
+    height: 225px;
+    width: auto;
+}
+
+.img{
+    height: 500px;   
+    margin-left: 500px; 
+}
+
+.titulo{
+    color: red;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    
+}
+
+.descripcion{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 25px;
+    text-align: justify;
+
+}
+
+.bloque{
+    width: 50%;
+
+}
+
+.secciones{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.imagenes{
+    width: 100%;
+    padding: 50px;
+}

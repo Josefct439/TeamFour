@@ -22,17 +22,12 @@ export const Carrito = () => {
                     </nav>
 
                 </section>
-
-
-
             </header>
 
 
-
-
-            <button onClick={aumentar}> +1 </button>
-            <button onClick={disminuir}> -1 </button>
-            <button onClick={reiniciar}> Reiniciar </button>
+            <button onClick={aumentar}> Añadir al carrito </button>
+            <button onClick={disminuir}> Quitar del carrito </button>
+            <button onClick={reiniciar}> Vaciar carrito </button>
 
 
         </>
