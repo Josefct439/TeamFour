@@ -1,15 +1,21 @@
+import { Link } from "react-router-dom"
+
 export const Index = () => {
+
+ 
+   
+
     return (
         <>
             <body>
                 <header className="cabezal">
                     <section>
-                        <img className="logo" src="./src/assets/TEAM_FOUR-removebg-preview.png" alt="" />
+                        <img className="logo" src="../src/assets/TEAM_FOUR-removebg-preview.png" alt="" />
                     </section>
                     <nav>
                         <ul>
-                            <li className="item inicio">Inicio</li>
-                            <li className="item nosotros">Sobre Instant Food</li>
+                            <li><Link className="item" to="/" >Inicio</Link></li>
+                            <li><Link className="item" to="/about" >Sobre Instant Food</Link></li>                        
                             <li className="item productos">Menú</li>
                             <li className="item novedades">Novedades</li>
                             <li className="item contacto">Contáctanos</li>
@@ -26,6 +32,7 @@ export const Index = () => {
                         <h1 className="titulo">
                             ¿ESTÁS LISTO?
                         </h1>
+                        
                         <p className="descripcion">
                             Sumérgete en un mundo de sabores irresistibles y
                             disfruta de nuestras increíbles combinaciones de
@@ -47,3 +54,4 @@ export const Index = () => {
         </>
     )
 }
+

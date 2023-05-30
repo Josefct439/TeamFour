@@ -1,5 +1,4 @@
-import { useCarrito } from "./hooks/useCarrito";
-
+import { useCarrito } from "../hooks/useCarrito";
 export const Carrito = () => {
 
 
@@ -32,9 +31,5 @@ export const Carrito = () => {
 
         </>
     )
-
-
-
-
-
 }
+export default Carrito

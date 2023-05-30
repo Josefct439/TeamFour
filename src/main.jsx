@@ -1,13 +1,50 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import {
     createBrowserRouter,
     RouterProvider,
 } from 'react-router-dom';
-import { Home } from './hooks/Home';
-import { About } from './hooks/About';
-import { Carrito } from './Carrito';
-import { Index } from './hooks/Index';
+
+
+
+import { useNavigate, Outlet } from 'react-router-dom';
+
+import Login from './Pages/Login';
+import Signup from './pages/SignUp';
+
+import { Carrito } from './Pages/Carrito';
+import { Index } from './Pages/Index';
+import { About } from './Pages/About';
+import { Home } from './Pages/Home';
+
+
+
+const PrivateRoute = ({element: Element, isAuth, ...rest}) => {
+    const navigate = useNavigate()
+    useEffect(() => {
+      if (!isAuth) {
+        navigate("/login", {replace: true})
+      }
+
+    }, [isAuth, navigate])
+   
+  
+    // Outlet nos permite establecer un slot o espacio vacío dentro de un componente, donde podemos renderizar el resultado de una ruta.
+    return isAuth ?  Element :<Outlet />;
+  }
+
+  const PublicRoute = ({element: Element, isAuth, ...rest}) => {
+    const navigate = useNavigate()
+    useEffect(() => {
+      if (isAuth) {
+        navigate("/", {replace: true})
+      }
+
+    }, [isAuth, navigate])
+   
+
+    return !isAuth ?  Element :<Outlet />;
+  }
 
 
 
@@ -16,6 +53,7 @@ import { Index } from './hooks/Index';
 
 
 const router = createBrowserRouter([
+
     {
         path: "/carrito",
         element: <Carrito/>
@@ -24,14 +62,27 @@ const router = createBrowserRouter([
         path: "/home",
         element: <Home/>
     },
+
+    {
+        path: "/login",
+        element: <PublicRoute isAuth={localStorage.getItem("isLoggedIn") == "true"} element={<Login/>} />
+    },
+
+    {
+        path: "/singup",
+        element: <Signup/>
+    },
+
     {
         path: "/about",
         element: <About/>
     },
+
     {
-        path: "/index",
-        element: <Index/>
+        path: "/",
+        element: <PrivateRoute isAuth={localStorage.getItem("isLoggedIn") == "true"} element={<Index/>} />
     },
+
 ]);
 
 
