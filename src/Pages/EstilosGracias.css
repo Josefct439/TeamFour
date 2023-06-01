@@ -1,0 +1,46 @@
+.container-gracias{
+    margin-top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url("https://images.pexels.com/photos/5920755/pexels-photo-5920755.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.titulo-gracias,.titulo-gracias-movil{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.titulo-gracias-movil{
+    display: none;
+}
+.parrafo-gracias{
+    text-align: center;
+    font-size: 18px;
+}
+.caja-gracias{
+    padding: 40px;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .titulo-gracias-movil{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 6px;
+    }
+
+.titulo-gracias{
+    display: none;
+}
+.parrafo-gracias{
+    font-size: 16px;
+}
+
+}
