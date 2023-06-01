@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom"
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { FirebaseAuth } from '../Firebase/config'
+import { NavLink, useNavigate } from 'react-router-dom'
 
 export const Index = () => {
 
- 
-   
+    //const cerrar = () => {localStorage.clear()}
 
+    
     return (
         <>
             <body>
@@ -14,17 +17,20 @@ export const Index = () => {
                     </section>
                     <nav>
                         <ul>
-                            <li><Link className="item" to="/" >Inicio</Link></li>
-                            <li><Link className="item" to="/about" >Sobre Instant Food</Link></li>                        
-                            <li className="item productos">Menú</li>
-                            <li className="item novedades">Novedades</li>
-                            <li className="item contacto">Contáctanos</li>
+                            <li className="item"><Link className="link" to="/">Inicio</Link></li>
+                            <li className="item"><Link className="link" to="/about">Sobre Instant Food</Link></li>                        
+                            <li className="item"><Link className="link" to="/menu">Menú</Link></li>   
+                            <li className="item"><Link className="link" to="/novedades">Novedades</Link></li> 
+                            <li className="item"><Link className="link" to="/contactos">Contáctanos</Link></li> 
                         </ul>
+                        {/*<button onClick={cerrar}>Cerrar sesión</button>*/}
                     </nav>
                 </header>
-
+                  
                 <section>
-                    <img className="img" src="./src/assets/Fast_food_Hamburger_Buns_Tomatoes_French_fries_576086_1280x853.jpg" alt="" />
+                    
+                    <img className="img" src="./src/assets/Fast_food_Hamburger_Buns_Tomatoes_French_fries_576086_1280x853.jpg" alt=""  />
+                    
                 </section>
 
                 <section className="secciones">
@@ -53,5 +59,7 @@ export const Index = () => {
 
         </>
     )
+
+    
 }
 

@@ -1,6 +1,6 @@
 
-import React, {useState} from 'react';
-import {  signInWithEmailAndPassword   } from 'firebase/auth';
+import React, { useState } from 'react';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 import { FirebaseAuth } from '../Firebase/config'
 import { NavLink, useNavigate } from 'react-router-dom'
 
@@ -12,7 +12,7 @@ const Login = () => {
     const [password, setPassword] = useState('');
 
 
-       
+
     const onLogin = (e) => {
         e.preventDefault();
         signInWithEmailAndPassword(FirebaseAuth, email, password)
@@ -23,8 +23,7 @@ const Login = () => {
                 localStorage.setItem("accessToken", user["accessToken"])
                 localStorage.setItem("email", user["email"])
                 
-
-                navigate("/")
+                navigate("/carrito")
                 console.log(user)
 
 
@@ -33,67 +32,67 @@ const Login = () => {
                 const errorMessage = error.message;
                 console.log(errorCode, errorMessage)
             });
-       
+
     }
- 
-    return(
+
+    return (
         <>
+            <body className='body_login'>
 
-            <main >        
-                <section>
-                    <div>                                            
-                        <h1> ¡¡Inicia sesion!! </h1>                       
-                                                       
-                        <form>                                              
-                            <div>
-                                <label htmlFor="email-address">
-                                    Correo/Usuario: 
-                                </label>
-                                <input
-                                    id="email-address"
-                                    name="email"
-                                    type="email"                                    
-                                    required                                                                                
-                                    placeholder="Email address"
-                                    onChange={(e)=>setEmail(e.target.value)}
-                                />
-                            </div>
 
-                            <div>
-                                <label htmlFor="password">
-                                    Contraseña:
-                                </label>
-                                <input
-                                    id="password"
-                                    name="password"
-                                    type="password"                                    
-                                    required                                                                                
-                                    placeholder="Password"
-                                    onChange={(e)=>setPassword(e.target.value)}
-                                />
-                            </div>
-                                                
-                            <div>
-                                <button                                    
-                                    onClick={onLogin}                                        
-                                >      
-                                    Iniciar                                                                
-                                </button>
-                            </div>                               
-                        </form>
-                       
-                        <p className="text-sm text-white text-center">
-                            ¿No tienes cuenta aun? {' '}
-                            <NavLink to="/singup">
-                                Registrate
-                            </NavLink>
-                        </p>
-                                                   
-                    </div>
-                </section>
-            </main>
+                <main >
+                    <section className='container'>
+                        <div className="login_container">
+                            <h1 className="titulo"> ¡¡Inicia sesión!! </h1>
+
+                            <form className='formulario'>
+                                <div className="divisiones">
+
+                                    <input
+                                        id="email-address"
+                                        name="email"
+                                        type="email"
+                                        required
+                                        placeholder="Email"
+                                        className='ho'
+                                        onChange={(e) => setEmail(e.target.value)}
+                                    />
+                                </div>
+
+                                <div className="divisiones">
+                                    <input
+                                        id="password"
+                                        name="password"
+                                        type="password"
+                                        required
+                                        placeholder="Contraseña"
+                                        className='ho'
+                                        onChange={(e) => setPassword(e.target.value)}
+                                    />
+                                </div>
+
+                                <div className="divisiones">
+                                    <button className='button_login'
+                                        onClick={onLogin}
+                                    >
+                                        Iniciar
+                                    </button>
+                                </div>
+                            </form>
+
+                            <p className="registro">
+                                ¿Primera vez en Instant Food? {' '}
+                                <NavLink className="formulario" to="/singup">
+                                    Regístrate ahora
+                                </NavLink>
+                            </p>
+
+                        </div>
+                    </section>
+                </main>
+            </body>
         </>
     )
 }
- 
+
 export default Login
