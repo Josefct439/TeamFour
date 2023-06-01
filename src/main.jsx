@@ -18,6 +18,8 @@ import { About } from './Pages/About';
 import { Home } from './Pages/Home';
 import { Registro } from './Pages/registro';
 import { Menu } from './Pages/Menu';
+import Contact from './Pages/Contact';
+import { Gracias } from './Pages/Gracias';
 
 const PrivateRoute = ({ element: Element, isAuth, ...rest }) => {
   const navigate = useNavigate()
@@ -79,6 +81,14 @@ const router = createBrowserRouter([
   {
     path: "/menu",
     element: <Menu />
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+  },
+  {
+    path: "/gracias",
+    element: <Gracias />,
   },
   {
     path: "/",
