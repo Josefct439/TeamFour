@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@120&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 .Carrito {
 
@@ -189,6 +190,11 @@ nav {
     border-width: 0;
 }
 
+.button_login:hover{
+    background-color: red;
+    width: 105%;
+}
+
 
 
 .cabezal{
@@ -222,12 +228,11 @@ nav {
 }
 
 .productos{
-    margin-top: 50px;
+    margin-top: 0;
     display: flex;
     flex-wrap: wrap;
     margin-left: 100px;
     margin-right: 100px;
-    height: 50%;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -236,19 +241,38 @@ nav {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 10px;
+    padding: 15.5px;
 }
 
 .comidas{
     width: 100%;
-    height: 250px;
+    height: 100%;
     display: flex;
     object-fit: cover;
     justify-content: center;
+    cursor: pointer;
+}
+.comidas:hover{
+    width: 105%;
 }
 
 .conpro{
     padding: 0.2rem ;
     text-align: center;
+    
 }
+.titulo_sec{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Permanent Marker', cursive;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
+}
+.pre{
+    font-weight:bolder;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: larger;
+}
