@@ -1,7 +1,13 @@
 import { useState } from "react";
 
 
-export const useCarrito = (inicial = 0) => {
+export const useCarrito = (inicial = localStorage.getItem("contador")) => {
+
+    if (inicial = NaN){
+        inicial = 0
+    }
+    
+    inicial = parseInt(inicial);
 
 
     const [contar, setContar ] = useState(inicial)
@@ -17,7 +23,8 @@ export const useCarrito = (inicial = 0) => {
     }
 
     const reiniciar = () => {
-        setContar (inicial);
+        setContar (0);
+        localStorage.setItem("contador");   
     }
 
     return{

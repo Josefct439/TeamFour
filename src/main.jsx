@@ -20,6 +20,7 @@ import { Registro } from './Pages/registro';
 import { Menu } from './Pages/Menu';
 import Contact from './Pages/Contact';
 import { Gracias } from './Pages/Gracias';
+import {Admin} from './Pages/Admin'
 
 const PrivateRoute = ({ element: Element, isAuth, ...rest }) => {
   const navigate = useNavigate()
@@ -86,10 +87,17 @@ const router = createBrowserRouter([
     path: "/contact",
     element: <Contact />,
   },
+
   {
     path: "/gracias",
     element: <Gracias />,
   },
+
+  {
+    path: "/admin",
+    element: <Admin />,
+  },
+
   {
     path: "/",
     element: <PublicRoute isAuth={localStorage.getItem("isLoggedIn") == "true"} element={<Index />} />

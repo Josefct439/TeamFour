@@ -11,10 +11,14 @@
     margin: 0;
     box-sizing: border-box;
   }
+  
+  body{
+    background-color: black ;
+  }
 
 
 .Carrito {
-  color: black;
+  color: white;
   font-family: "Times New Roman", Times, serif;
   font-size: medium;
 }
@@ -71,7 +75,7 @@ nav {
 
 .titulo {
   color: #f4c414;
-  font-family: "Oswald", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 50px;
@@ -174,14 +178,10 @@ nav {
 .cabezal{
     position:fixed;
     width: 100%;
-    background-color: rgba(0, 0, 0, .5);}
-
-.cabezal {
-  position: fixed;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-
+    background-color: rgba(0, 0, 0, .5);
 }
+
+
 .container_r {
   margin-left: 175px;
   margin-right: 175px;
@@ -199,7 +199,9 @@ nav {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  background-color: #f4c414;
 }
 
 
@@ -230,6 +232,7 @@ nav {
 }
 .comidas:hover{
     width: 105%;
+    
 }
 
 .conpro{
@@ -244,6 +247,7 @@ nav {
     font-family: 'Permanent Marker', cursive;
     margin-top: 10px;
     margin-bottom: 10px;
+    color: #f4c414 ;
 
 }
 .pre{
@@ -264,11 +268,12 @@ nav {
 }
 
 .articulo {
-  width: 17%;
+  width: 30%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding: 10px;
+  color: white;
 }
 
 .comidas {
@@ -284,3 +289,66 @@ nav {
   text-align: center;
 }
 
+.estadisticas{
+    display: flex;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.art_esta{
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.titulos_esta{
+    font-size: 35px;
+    padding-bottom: 30px;
+    color: #f4c414;
+}
+.datos{
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+.grafico{
+    display: flex;
+    object-fit: cover;
+    justify-content: center;
+    width: 100%;
+}
+
+.desc{
+  height: 140px;
+}
+
+.Navmenu{
+  padding-top: 100px;
+}
+
+.linkMenu {
+  text-decoration: none;
+  color: black;
+}
+
+.linkMenu:hover {
+  color:  white ;
+}
+
+.carritoicon{
+  width: 10%;
+  padding-top: 75px;
+}
+
+.icon{
+  
+  width: 40%;
+  
+}
+.icon:hover{
+  
+  width: 45%;
+}

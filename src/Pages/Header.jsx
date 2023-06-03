@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-Link
+
 export const Header = () =>{
     return(
         <header className="cabezal">

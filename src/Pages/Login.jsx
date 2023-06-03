@@ -43,7 +43,7 @@ const Login = () => {
                 <main >
                     <section className='container'>
                         <div className="login_container">
-                            <h1 className="titulo"> ¡¡Inicia sesión!! </h1>
+                            <h1 className="titulo"> Iniciar sesión </h1>
 
                             <form className='formulario'>
                                 <div className="divisiones">
