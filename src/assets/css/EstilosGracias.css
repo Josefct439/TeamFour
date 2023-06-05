@@ -28,6 +28,23 @@
     background-color: white;
     margin-bottom: 20px;
 }
+.boton{
+    padding: 20px;
+    background-color: yellow;
+    text-decoration: none;
+    border-radius: 10px;
+    color: black;
+    
+}
+.boton:hover{
+    background-color: black;
+    color: yellow;
+}
+
+.caja-boton{
+    text-align: center;
+    margin-top: 50px;
+}
 
 @media screen and (max-width: 600px) {
     .titulo-gracias-movil{
@@ -44,3 +61,4 @@
 }
 
 }
+

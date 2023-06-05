@@ -14,7 +14,7 @@ export const Carrito = () => {
          <HeaderMenu/>
 
             <header>
-                <section> <h2 className="Carrito">Carrito: {contar} </h2></section>
+                <section> <h2 className="Carrito">Carrito: {contar}  </h2></section>
             </header>
 
 

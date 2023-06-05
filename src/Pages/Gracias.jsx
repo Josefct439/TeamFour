@@ -15,6 +15,10 @@ export const Gracias = () => {
           <p className="parrafo-gracias">
             Te responderemos en el menor tiempo posible✅
           </p>
+          <div className="caja-boton">
+          <a href="/" className="boton">Regresar al inicio</a>
+          </div>
+          
         </div>
       </section>
     </>
