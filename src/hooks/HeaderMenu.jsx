@@ -6,7 +6,7 @@ export const HeaderMenu = () => {
         <>
             <header className="cabezal_menu">
                 <section>
-                    <img className="logo" src="../src/assets/TEAM_FOUR-removebg-preview.png" alt="" />
+                    <img className="logo" src="../src/assets/Logos/TEAM_FOUR-removebg-preview.png" alt="" />
                 </section>
                 <section className="Navmenu">
                     <nav>
@@ -43,7 +43,7 @@ export const HeaderMenu = () => {
 
                 <section className="carritoicon">
                     <Link to="/carrito">
-                        <img  className="icon" src="../src/assets/IconCarrito.png" alt="" />
+                        <img  className="icon" src="../src/assets/Iconos/IconCarrito.png" alt="" />
                     </Link>
                      
                     

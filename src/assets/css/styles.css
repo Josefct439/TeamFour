@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@120&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
@@ -7,14 +6,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  body{
-    background-color: black ;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
 
 
 .Carrito {
@@ -64,13 +63,17 @@ nav {
   width: auto;
   padding-left: 50px;
   padding-right: 50px;
+  padding-top: 5px;
 }
 
 .img {
-  width: 100%;
+ 
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 
 .titulo {
@@ -91,6 +94,7 @@ nav {
 
 .bloque {
   width: 50%;
+  padding: 50px;
 }
 
 .secciones {
@@ -165,20 +169,23 @@ nav {
   color: white;
   font-family: "Poppins", sans-serif;
   border-width: 0;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 
 
-.button_login:hover{
-    background-color: red;
-    width: 105%;
+.button_login:hover {
+  background-color: red;
+
+
 }
 
 
 
-.cabezal{
-    position:fixed;
-    width: 100%;
-    background-color: rgba(0, 0, 0, .5);
+.cabezal {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .5);
 }
 
 
@@ -195,6 +202,7 @@ nav {
   padding: 50px;
   text-align: center;
 }
+
 .cabezal_menu {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -205,56 +213,59 @@ nav {
 }
 
 
-.productos{
-    margin-top: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 100px;
-    margin-right: 100px;
-    font-family: 'Poppins', sans-serif;
+.productos {
+  margin-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-family: 'Poppins', sans-serif;
 }
 
-.articulo{
-    width: 17%; 
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 15.5px;
+.articulo {
+  width: 17%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15.5px;
 }
 
-.comidas{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    object-fit: cover;
-    justify-content: center;
-    cursor: pointer;
-}
-.comidas:hover{
-    width: 105%;
-    
+.comidas {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  object-fit: cover;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.conpro{
-    padding: 0.2rem ;
-    text-align: center;
-    
-}
-.titulo_sec{
-    width: 100%;
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Permanent Marker', cursive;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: #f4c414 ;
+.comidas:hover {
+  width: 105%;
 
 }
-.pre{
-    font-weight:bolder;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    font-size: larger;
+
+.conpro {
+  padding: 0.2rem;
+  text-align: center;
+
+}
+
+.titulo_sec {
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Permanent Marker', cursive;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #f4c414;
+
+}
+
+.pre {
+  font-weight: bolder;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: larger;
 }
 
 .productos {
@@ -268,7 +279,7 @@ nav {
 }
 
 .articulo {
-  width: 30%;
+  width: 33.3%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -282,6 +293,8 @@ nav {
   display: flex;
   object-fit: cover;
   justify-content: center;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 
 .conpro {
@@ -289,43 +302,46 @@ nav {
   text-align: center;
 }
 
-.estadisticas{
-    display: flex;
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
+.estadisticas {
+  display: flex;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
-.art_esta{
-    width: 50%;
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-}
-.titulos_esta{
-    font-size: 35px;
-    padding-bottom: 30px;
-    color: #f4c414;
-}
-.datos{
-    padding-bottom: 30px;
-    font-size: 20px;
-}
-.grafico{
-    display: flex;
-    object-fit: cover;
-    justify-content: center;
-    width: 100%;
+.art_esta {
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.desc{
+.titulos_esta {
+  font-size: 35px;
+  padding-bottom: 30px;
+  color: #f4c414;
+}
+
+.datos {
+  padding-bottom: 30px;
+  font-size: 20px;
+}
+
+.grafico {
+  display: flex;
+  object-fit: cover;
+  justify-content: center;
+  width: 100%;
+}
+
+.desc {
   height: 140px;
 }
 
-.Navmenu{
+.Navmenu {
   padding-top: 100px;
 }
 
@@ -335,20 +351,81 @@ nav {
 }
 
 .linkMenu:hover {
-  color:  white ;
+  color: white;
 }
 
-.carritoicon{
+.carritoicon {
   width: 10%;
   padding-top: 75px;
 }
 
-.icon{
-  
+.icon {
+
   width: 40%;
+
+}
+
+.icon:hover {
+
+  width: 45%;
+}
+
+.novedad {
+  width: 46.6%;
+  margin: 15px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.imgnove {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  object-fit: cover;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.pronove {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 40px;
+  border-radius: 10px;
+  border: 5px solid white;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.desno {
+  font-size: x-large;
   
 }
-.icon:hover{
-  
-  width: 45%;
+
+.preno {
+  font-weight: bolder;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: xx-large;
+}
+.precioNov{
+  margin-top: 50px;
+}
+
+.conproNov{
+  margin-top: 20px;
+}
+
+.notas{
+  margin-top: 10px;
+  font-size: smaller;
+  color: gray;
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+}
+.pie{
+  color: white;
+  background-color: gray;
+  padding-left: 50px;
+  padding-right: 50px;
 }

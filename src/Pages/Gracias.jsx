@@ -1,4 +1,4 @@
-import "./EstilosGracias.css";
+import "../assets/css/EstilosGracias.css";
 import { Link } from "react-router-dom";
 export const Gracias = () => {
   return (

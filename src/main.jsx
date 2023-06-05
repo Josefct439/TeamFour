@@ -11,16 +11,15 @@ import { useNavigate, Outlet } from 'react-router-dom';
 
 import Login from './Pages/Login';
 import Signup from './pages/SignUp';
-
 import { Carrito } from './Pages/Carrito';
 import { Index } from './Pages/Index';
 import { About } from './Pages/About';
 import { Home } from './Pages/Home';
-import { Registro } from './Pages/registro';
 import { Menu } from './Pages/Menu';
 import Contact from './Pages/Contact';
 import { Gracias } from './Pages/Gracias';
 import {Admin} from './Pages/Admin'
+import { Novedades } from './Pages/Novedades';
 
 const PrivateRoute = ({ element: Element, isAuth, ...rest }) => {
   const navigate = useNavigate()
@@ -75,10 +74,7 @@ const router = createBrowserRouter([
     path: "/about",
     element: <About />
   },
-  {
-    path: "/registro",
-    element: <Registro />
-  },
+
   {
     path: "/menu",
     element: <Menu />
@@ -96,6 +92,11 @@ const router = createBrowserRouter([
   {
     path: "/admin",
     element: <Admin />,
+  },
+
+  {
+    path: "/novedades",
+    element: <Novedades />,
   },
 
   {
